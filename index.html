@@ -51,7 +51,7 @@
       <section class="section section-main">
         <div class="container">
           <h1 class="title-main">Effective Solutions for Your Business</h1>
-          <button class="button order-bt" type="button" data-modal-open>
+          <button class="button default-btn" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -415,6 +415,23 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form-section">
+          <p class="simple-text">Subscribe</p>
+          <form class="footer-form">
+            <input
+              class="form-input footer-input"
+              type="email"
+              placeholder="E-mail"
+              name="footer-email"
+            />
+            <button type="submit" class="button form-footer-btn">
+              Subscribe
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -424,6 +441,69 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form" name="modal-form">
+          <label class="form-label" for="name-input">Name</label>
+          <div class="input-wrapper">
+            <input class="form-input" type="text" name="name-input" />
+            <svg width="12" height="12">
+              <use href="./images/icons.svg#name"></use>
+            </svg>
+          </div>
+
+          <label class="form-label" for="phone-input">Phone</label>
+          <div class="input-wrapper">
+            <input class="form-input" type="phone" name="phone-input" />
+            <svg width="12" height="12">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
+          </div>
+
+          <label class="form-label" for="email-input">Email</label>
+          <div class="input-wrapper">
+            <input class="form-input" type="email" name="email-input" />
+            <svg width="12" height="12">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
+          </div>
+
+          <label class="form-label" for="comment-textarea">Comment</label>
+          <textarea
+            class="form-textarea"
+            name="comment-textarea"
+            rows="4"
+            minlength="7"
+            placeholder="Text input"
+          ></textarea>
+
+          <label class="form-agreement">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="user-agreement"
+            />
+
+            <span class="form-checkbox">
+              <svg class="form-checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            <span class="form-agreement-desc">
+              I accept the terms and conditions of the
+              <a
+                class="form-agreement-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Privacy Policy
+              </a>
+            </span>
+          </label>
+
+          <button class="button default-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
