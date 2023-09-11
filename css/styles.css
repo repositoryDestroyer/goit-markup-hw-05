@@ -723,6 +723,11 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-agreement-desc {
+  display: block;
+  line-height: 1.17;
+}
+
 input[type='checkbox']:checked + .form-agreement-desc .form-checkbox {
   border-color: transparent;
   background-color: var(--pressed-cl);
